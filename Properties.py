@@ -50,7 +50,7 @@ user_answers = []
 all_answered = True
 
 # Load periodic table image once
-st.image("Periodic_Table.png", width=600)
+st.image("periodic_table.png", width=600)
 
 for i, q in enumerate(questions):
     st.markdown(f"<h2 style='font-size: 32px;'>Question {i+1}</h2>", unsafe_allow_html=True)
@@ -108,3 +108,4 @@ if st.button("Submit Quiz"):
         if st.button("Try Again"):
             st.session_state.clear()
             st.experimental_rerun()
+
